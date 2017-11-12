@@ -1,0 +1,11 @@
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.UnitTest.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.UnitTest.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.Business.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.Model.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.Enums.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.Business.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.Model.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\bin\Debug\CryTek.Enums.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\obj\Debug\CryTek.UnitTest.csprojResolveAssemblyReference.cache
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\obj\Debug\CryTek.UnitTest.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.UnitTest\obj\Debug\CryTek.UnitTest.pdb

@@ -1,0 +1,9 @@
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\obj\Debug\CryTek.Data.csprojResolveAssemblyReference.cache
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\bin\Debug\CryTek.dll
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\bin\Debug\CryTek.pdb
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\bin\Debug\CryTek.Enums.dll
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\bin\Debug\CryTek.Helpers.dll
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\bin\Debug\CryTek.Enums.pdb
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\bin\Debug\CryTek.Helpers.pdb
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\obj\Debug\CryTek.dll
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.Data\obj\Debug\CryTek.pdb

@@ -1,0 +1,14 @@
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\bin\Debug\CryTek.TestApp.Enums.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\bin\Debug\CryTek.TestApp.Enums.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\obj\Debug\CryTek.TestApp.Enums.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\obj\Debug\CryTek.TestApp.Enums.pdb
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.Enums\bin\Debug\CryTek.TestApp.Enums.dll
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.Enums\bin\Debug\CryTek.TestApp.Enums.pdb
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.Enums\obj\Debug\CryTek.TestApp.Enums.csprojResolveAssemblyReference.cache
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.Enums\obj\Debug\CryTek.TestApp.Enums.dll
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.Enums\obj\Debug\CryTek.TestApp.Enums.pdb
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.TestApp.Enums\bin\Debug\CryTek.TestApp.Enums.dll
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.TestApp.Enums\bin\Debug\CryTek.TestApp.Enums.pdb
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.TestApp.Enums\obj\Debug\CryTek.TestApp.Enums.csprojResolveAssemblyReference.cache
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.TestApp.Enums\obj\Debug\CryTek.TestApp.Enums.dll
+D:\Dropbox\Projects\CryTek\Crytek.TestApp\CryTek.TestApp.Enums\obj\Debug\CryTek.TestApp.Enums.pdb

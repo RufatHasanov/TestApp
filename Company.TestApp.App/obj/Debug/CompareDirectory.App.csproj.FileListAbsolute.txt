@@ -1,0 +1,1 @@
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory\bin\Debug\CompareDirectory.exe.config

@@ -1,0 +1,141 @@
+﻿<Window x:Class="Company.TestApp.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Company.TestApp.App"
+        mc:Ignorable="d"
+        Title="Compare directory" Height="550" Width="525" WindowStartupLocation="CenterScreen">
+    <Border Padding="15">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Buttons -->
+                    <Button x:Name="btnStart" Margin="0 0 10 0" Grid.Column="0" Content="Start or recompare" 
+                         Command="{Binding CompareDirectoryCommand}" />
+                </Grid>
+                <!-- First and Second directory textbox -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- First -->
+                    <StackPanel Grid.Column="0" Margin="0 0 0 10">
+                        <TextBlock Text="First directory"/>
+                        <TextBox x:Name="txtFirstDirectory"  
+                             Text="{Binding Path = FirstDirectory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <Button Content="..." Command="{Binding ChooseFirstDirectoryCommand, UpdateSourceTrigger=PropertyChanged}"  
+                                 Width="40" ></Button>
+                    </StackPanel>
+                    <!-- Second -->
+                    <StackPanel Grid.Column="2" Margin="0 0 0 10">
+                        <TextBlock Text="Second directory" />
+                        <TextBox x:Name="txtSecondDirectory"  
+                             Text="{Binding Path = SecondDirectory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" VerticalAlignment="Center">
+                        
+                        <Button Content="..." Command="{Binding ChooseSecondDirectoryCommand, UpdateSourceTrigger=PropertyChanged}" Width="40"></Button>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Grid>
+                    <!--Compare directory results Tabs -->
+                    <TabControl>
+                        <!--Action Tabs-->
+                        <TabItem Header="Actions">
+                            
+                            <!--Make second like first directory actions list -->
+                            <ListView Name="lstDirectoryActionDetails" Margin="10,10,10,10"   ItemsSource="{Binding DirectoryAndActionItems}"  Height="350" >
+                                <ListView.Resources>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                    </Style>
+                                    <local:OrdinalConverter x:Key="OrdinalConverter" />
+                                    <DataTemplate x:Key="OrdinalColumnDataTemplate">
+                                        <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListViewItem},
+                                                                  Converter={StaticResource ResourceKey=OrdinalConverter}}" HorizontalAlignment="Right" />
+                                    </DataTemplate>
+                                </ListView.Resources>
+                                <ListView.View>
+                                    <GridView x:Name="grvAction"  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                        <GridViewColumn Header="#" CellTemplate="{StaticResource ResourceKey=OrdinalColumnDataTemplate}" Width="40"/>
+                                        <GridViewColumn Header="Action" DisplayMemberBinding="{Binding ActionType}"  Width="80"/>
+                                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"  Width="Auto" />
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            
+                        </TabItem>
+                        
+                        <!--Directory difference-->
+                        <TabItem Header="Diff">
+                            
+                            <!--Directory compare result list-->
+                            <ListView Name="lstDirectoryDiff" Margin="10,10,10,10"  ItemsSource="{Binding Items}"  Height="350">
+                                <ListView.Resources>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch"  />
+                                    </Style>
+                                    <local:OrdinalConverter x:Key="OrdinalConverter" />
+                                    <DataTemplate x:Key="OrdinalColumnDataTemplate">
+                                        <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListViewItem},
+                                                                   Converter={StaticResource ResourceKey=OrdinalConverter}}" HorizontalAlignment="Right" />
+                                    </DataTemplate>
+                                    <DataTemplate x:Key="FirstColumnDataTemplate">
+                                        <Border Background="{Binding PanelColor}">
+                                            <StackPanel Orientation="Horizontal" Background="{Binding PanelColor}" Width="Auto">
+                                                <Image Width="20" Margin="3" 
+                                                       Source="{Binding CompareDirectory.Type,
+                                                                        Converter={x:Static local:HeaderToImageConverter.Instance}}" />
+                                                <TextBlock VerticalAlignment="Center" Text="{Binding 
+                                            Path = CompareDirectory.FirstDirectoryItem.Name}" />
+                                            </StackPanel>
+                                        </Border>
+                                    </DataTemplate>
+                                    <DataTemplate x:Key="SecondColumnDataTemplate">
+                                        <Border Background="{Binding PanelColor}">
+                                            <StackPanel Orientation="Horizontal"  Width="Auto">
+                                                <Image Width="20" Margin="3" 
+                                                       Source="{Binding CompareDirectory.Type,
+                                                                        Converter={x:Static local:HeaderToImageConverter.Instance}}" />
+                                                <TextBlock VerticalAlignment="Center" Text="{Binding 
+                                            Path = CompareDirectory.SecondDirectoryItem.Name}" />
+                                            </StackPanel>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListView.Resources>
+                                <ListView.View>
+                                    <GridView x:Name="grvDirectoryDiff" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                        <GridViewColumn Header="#" CellTemplate="{StaticResource ResourceKey=OrdinalColumnDataTemplate}" Width="40"/>
+                                        <GridViewColumn Header="First" CellTemplate="{StaticResource ResourceKey=FirstColumnDataTemplate}"  Width="200"/>
+                                        <GridViewColumn Header="Second" CellTemplate="{StaticResource ResourceKey=SecondColumnDataTemplate}"    Width="200" />
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,5 @@
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.ViewModels\bin\Debug\CompareDirectory.ViewModels.dll
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.ViewModels\bin\Debug\CompareDirectory.ViewModels.pdb
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.ViewModels\obj\Debug\CompareDirectory.ViewModels.csprojResolveAssemblyReference.cache
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.ViewModels\obj\Debug\CompareDirectory.ViewModels.dll
+X:\Work\Project\CryTek\CrytekTest\CompareDirectory.ViewModels\obj\Debug\CompareDirectory.ViewModels.pdb

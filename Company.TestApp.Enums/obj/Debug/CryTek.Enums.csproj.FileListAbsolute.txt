@@ -1,0 +1,8 @@
+X:\Work\Project\CryTek\CrytekTest\CryTek.Enums\bin\Debug\CryTek.Enums.dll
+X:\Work\Project\CryTek\CrytekTest\CryTek.Enums\bin\Debug\CryTek.Enums.pdb
+X:\Work\Project\CryTek\CrytekTest\CryTek.Enums\obj\Debug\CryTek.Enums.dll
+X:\Work\Project\CryTek\CrytekTest\CryTek.Enums\obj\Debug\CryTek.Enums.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\bin\Debug\CryTek.Enums.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\bin\Debug\CryTek.Enums.pdb
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\obj\Debug\CryTek.Enums.dll
+D:\Dropbox\Projects\CryTek\CrytekTest\CryTek.Enums\obj\Debug\CryTek.Enums.pdb
