@@ -27,7 +27,7 @@ namespace Company.TestApp.UnitTest
                                                                                   new CompareDirectoryItem() { ComparableValue = @"App2\",SecondDirectoryItem = new DirectoryItem() {Name=@"App2\",FullPath= @"C:\App2\", Type=DirectoryItemType.Folder }, Type=DirectoryItemType.Folder } };
             
         }
-
+///Fake class with right Action List
         public List<DirectoryItemAndAction> GetFakeClassRightActionList()
         {
             return new List<DirectoryItemAndAction>() { new DirectoryItemAndAction() { ActionType=DirectoryItemActionType.Create, DirectoryItemValue=  new DirectoryItem() { Name = @"App\", FullPath = @"C:\App\", Type = DirectoryItemType.Folder } },
