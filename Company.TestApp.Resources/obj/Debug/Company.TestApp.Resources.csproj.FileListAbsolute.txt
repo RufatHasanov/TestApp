@@ -4,3 +4,4 @@ D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Resources\obj\Debug\Company.
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Resources\obj\Debug\Company.TestApp.Resources.csproj.GenerateResource.Cache
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Resources\obj\Debug\Company.TestApp.Resources.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Resources\obj\Debug\Company.TestApp.Resources.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Resources\obj\Debug\Company.TestApp.Resources.csprojResolveAssemblyReference.cache

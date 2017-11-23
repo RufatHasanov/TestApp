@@ -135,15 +135,17 @@ namespace Company.TestApp.ViewModels
         {
             try
             {
+                //Clear last messages
+                SystemInfoMessage = new InfoMessage() { Visible = false };
+                //Clear child items
+                this.DirectoryAndActionItems = null;
+                this.Items = null;
+
                 // Get the all directories and files from first and second Path
                 using (var compareDirectoryStructure = new CompareDirectoryStructure(new DirectoryStructure(FirstDirectory, SecondDirectory)))
                 {
                     var children = compareDirectoryStructure.CompareResult;
-
-                    //Clear child items
-                    this.DirectoryAndActionItems = null;
-                    this.Items = null;
-
+                     
                     // Create the view models from the data
                     this.Items = new ObservableCollection<CompareDirectoryItemVM>(
                         children.Select(value => new CompareDirectoryItemVM(value)));
