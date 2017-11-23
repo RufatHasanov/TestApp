@@ -59,7 +59,7 @@
                         <ColumnDefinition Width="2*" />
                     </Grid.ColumnDefinitions>
                     <!-- Buttons -->
-                    <Button x:Name="btnStart" Margin="0 0 10 0" Grid.Column="0" Content="Start or recompare" 
+                    <Button x:Name="btnStart" Margin="0 0 10 10" Grid.Column="0" Content="Start or recompare" 
                          Command="{Binding CompareDirectoryCommand}" />
                 </Grid>
 
