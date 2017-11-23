@@ -16,3 +16,5 @@ D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Business\bin\Debug\Company.M
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Business\bin\Debug\Company.TestApp.Enums.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Business\obj\Debug\Company.TestApp.Business.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Business\obj\Debug\Company.TestApp.Business.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Business\bin\Debug\Company.TestApp.Resources.dll
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Business\bin\Debug\Company.TestApp.Resources.pdb

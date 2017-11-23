@@ -8,6 +8,7 @@ using System.Collections.Generic;
 #region Custom Usings
 using Company.TestApp.Enums;
 using Company.TestApp.Model;
+using Company.TestApp.Resources;
 #endregion Custom Usings
 
 

@@ -63,6 +63,10 @@
       <Project>{bbc78602-a7f4-4d73-9d2d-4e3318c79a41}</Project>
       <Name>Company.TestApp.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Company.TestApp.Resources\Company.TestApp.Resources.csproj">
+      <Project>{14db2374-3555-46ed-b0ef-a1baabb31da0}</Project>
+      <Name>Company.TestApp.Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

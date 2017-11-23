@@ -20,3 +20,5 @@ D:\Dropbox\Projects\Company.TestApp\Company.TestApp.ViewModels\bin\Debug\Company
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.ViewModels\bin\Debug\Company.TestApp.Business.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.ViewModels\obj\Debug\Company.TestApp.ViewModels.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.ViewModels\obj\Debug\Company.TestApp.ViewModels.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.ViewModels\bin\Debug\Company.TestApp.Resources.dll
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.ViewModels\bin\Debug\Company.TestApp.Resources.pdb

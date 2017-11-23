@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Company.TestApp.Business;
 using Company.TestApp.Enums;
 using Company.TestApp.Model;
+using Company.TestApp.Resources;
 #endregion Custom Usings
 
 namespace Company.TestApp.ViewModels

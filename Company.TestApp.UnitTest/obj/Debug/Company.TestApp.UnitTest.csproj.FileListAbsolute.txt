@@ -20,3 +20,5 @@ D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.T
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.Model.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.TestApp.Resources.dll
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.TestApp.Resources.pdb

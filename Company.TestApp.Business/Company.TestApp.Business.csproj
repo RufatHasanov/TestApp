@@ -56,6 +56,10 @@
       <Project>{74f8380b-4927-4df5-b68a-e5f12196bb1c}</Project>
       <Name>Company.TestApp.Enums</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Company.TestApp.Resources\Company.TestApp.Resources.csproj">
+      <Project>{14db2374-3555-46ed-b0ef-a1baabb31da0}</Project>
+      <Name>Company.TestApp.Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
