@@ -9,6 +9,7 @@ using System.Windows.Forms;
 #region Custom Usings
 using Company.TestApp.Business;
 using Company.TestApp.Enums;
+using Company.TestApp.Model;
 #endregion Custom Usings
 
 namespace Company.TestApp.ViewModels
@@ -70,6 +71,21 @@ namespace Company.TestApp.ViewModels
                 OnPropertyChanged("SecondDirectory");
             }
         }
+
+        InfoMessage systemInfoMessage = new InfoMessage() { Visible = false };
+        /// <summary>
+        /// System message
+        /// </summary>
+        public InfoMessage SystemInfoMessage
+        {
+            get { return systemInfoMessage; }
+            set
+            {
+                systemInfoMessage = value;
+                OnPropertyChanged("SystemInfoMessage");
+            }
+        }
+
         /// <summary>
         /// Action list make second like first
         /// </summary>
@@ -98,7 +114,7 @@ namespace Company.TestApp.ViewModels
         /// </summary>
         /// <param name="selectedDirectoryPath"></param>
         public string OpenFolderBrowser(string selectedDirectoryPath)
-        { 
+        {
             using (var myDialog = new FolderBrowserDialog())
             {
                 if (!string.IsNullOrEmpty(selectedDirectoryPath))
@@ -107,7 +123,7 @@ namespace Company.TestApp.ViewModels
                 }
                 myDialog.ShowDialog();
                 selectedDirectoryPath = myDialog.SelectedPath;
-                
+
             }
             return selectedDirectoryPath;
         }
@@ -125,53 +141,44 @@ namespace Company.TestApp.ViewModels
 
                     //Clear child items
                     this.DirectoryAndActionItems = null;
-                    
+                    this.Items = null;
+
                     // Create the view models from the data
                     this.Items = new ObservableCollection<CompareDirectoryItemVM>(
                         children.Select(value => new CompareDirectoryItemVM(value)));
-                    
+
                     //Check Action list items count
                     if (compareDirectoryStructure.ActionList.Count() > 0)
                         this.DirectoryAndActionItems = new ObservableCollection<DirectoryItemAndActionVM>(
                             compareDirectoryStructure.ActionList.Select(value => new DirectoryItemAndActionVM(
                                 value.DirectoryItemValue.FullPath, value.DirectoryItemValue.Name, value.ActionType)));
                     else
-                    { 
+                    {
                         //Show information when Action list is empty
-                        ShowMessageBox(Messages.DirectoriesstructureAreSame , "Info", SystemWindows.MessageBoxImage.Information);
+                        SystemInfoMessage = new InfoMessage() { Visible = true, BackgroundColor = SystemConstant.InfoColor, Message = Messages.DirectoriesstructureAreSame };
+
                     }
                 }
-                
+
                 //Set property change "Items"
                 OnPropertyChanged("Items");
-                
+
                 //Set property cnage "DirectoryAndActionItems"
                 OnPropertyChanged("DirectoryAndActionItems");
             }
             catch (CustomException customException)
             {
                 //Show Detail information about exception
-                ShowMessageBox(customException.Message, "Error", SystemWindows.MessageBoxImage.Error);
+                SystemInfoMessage = new InfoMessage() { Visible = true, BackgroundColor = SystemConstant.ErrorColor, Message = customException.Message };
+
             }
             catch (Exception ex)
             {
                 //Show Detail information about exception
-                ShowMessageBox(String.Format(Messages.ErrorDetailDetails,ex.Message), "Error occurred", SystemWindows.MessageBoxImage.Error);
+                SystemInfoMessage = new InfoMessage() { Visible = true, BackgroundColor = SystemConstant.ErrorColor, Message = String.Format(Messages.ErrorDetailDetails, ex.Message) };
             }
         }
         #endregion Public methods
 
-        #region Private Methods
-        /// <summary>
-        /// Show messagebox
-        /// </summary> 
-        /// <param name="message"></param>
-        /// <param name="caption"></param>
-        /// <param name="messageBoxImage"></param>
-        private void ShowMessageBox(string message, string caption, SystemWindows.MessageBoxImage messageBoxImage)
-        {
-            SystemWindows.MessageBox.Show(message, caption, SystemWindows.MessageBoxButton.OK, messageBoxImage);
-        }
-        #endregion Private Methods
     }
 }

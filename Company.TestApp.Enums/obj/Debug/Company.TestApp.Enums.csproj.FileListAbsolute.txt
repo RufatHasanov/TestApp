@@ -6,3 +6,4 @@ D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Enums\bin\Debug\Company.Test
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Enums\bin\Debug\Company.TestApp.Enums.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Enums\obj\Debug\Company.TestApp.Enums.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Enums\obj\Debug\Company.TestApp.Enums.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Enums\obj\Debug\Company.TestApp.Enums.csprojResolveAssemblyReference.cache

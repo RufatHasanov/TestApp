@@ -11,7 +11,7 @@ using Company.TestApp.Enums;
 /// </summary>
 namespace Company.TestApp.Model
 {
-    public class DirectoryItem : IComparable<DirectoryItem>
+    public class DirectoryFileItem : IComparable<DirectoryFileItem>
     {
         #region Properties
         /// <summary>
@@ -33,7 +33,7 @@ namespace Company.TestApp.Model
 
         #region Public methods
         // Alphabetic sort by directory item name - [A to Z]
-        public int CompareTo(DirectoryItem other)
+        public int CompareTo(DirectoryFileItem other)
         {
 
             int result = this.Name.CompareTo(other.Name);

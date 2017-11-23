@@ -9,6 +9,7 @@ D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Co
 D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.csprojResolveAssemblyReference.cache
 D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.dll
 D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.csprojResolveAssemblyReference.cache
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.TestApp.UnitTest.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.TestApp.UnitTest.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.Model.dll
@@ -17,6 +18,5 @@ D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.T
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.TestApp.Business.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.TestApp.Enums.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\bin\Debug\Company.Model.pdb
-D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.csprojResolveAssemblyReference.cache
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.UnitTest\obj\Debug\Company.TestApp.UnitTest.pdb

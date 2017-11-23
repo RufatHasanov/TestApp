@@ -95,14 +95,14 @@ namespace Company.TestApp.Business
                 if (dirs.Length > 0)
                     items.AddRange(dirs.Select(dir => new CompareDirectoryItem
                     {
-                        FirstDirectoryItem = (side == DirectoryItemSide.First ? new DirectoryItem()
+                        FirstDirectoryItem = (side == DirectoryItemSide.First ? new DirectoryFileItem()
                         {
                             FullPath = dir,
                             Name = dir.Substring(fullPath.Length),
                             Type = directoryItemType
                         } :
                         null),
-                        SecondDirectoryItem = (side == DirectoryItemSide.Second ? new DirectoryItem()
+                        SecondDirectoryItem = (side == DirectoryItemSide.Second ? new DirectoryFileItem()
                         {
                             FullPath = dir,
                             Name = dir.Substring(fullPath.Length),

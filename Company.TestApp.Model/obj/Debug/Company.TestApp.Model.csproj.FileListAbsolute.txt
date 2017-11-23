@@ -5,10 +5,10 @@ D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.Model\bin\Debug\Compa
 D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.TestApp.Model.csprojResolveAssemblyReference.cache
 D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.Model.dll
 D:\Dropbox\Projects\CryTek\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.Model.pdb
+D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.TestApp.Model.csprojResolveAssemblyReference.cache
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\bin\Debug\Company.Model.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\bin\Debug\Company.Model.pdb
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\bin\Debug\Company.TestApp.Enums.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\bin\Debug\Company.TestApp.Enums.pdb
-D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.TestApp.Model.csprojResolveAssemblyReference.cache
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.Model.dll
 D:\Dropbox\Projects\Company.TestApp\Company.TestApp.Model\obj\Debug\Company.Model.pdb

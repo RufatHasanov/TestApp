@@ -19,12 +19,12 @@ namespace Company.TestApp.Model
         /// <summary>
         /// The item of first directory
         /// </summary>
-        public DirectoryItem FirstDirectoryItem { get; set; }
+        public DirectoryFileItem FirstDirectoryItem { get; set; }
 
         /// <summary>
         /// The item of second directory
         /// </summary>
-        public DirectoryItem SecondDirectoryItem { get; set; }
+        public DirectoryFileItem SecondDirectoryItem { get; set; }
 
         /// <summary>
         /// Path part after searched dir

@@ -13,7 +13,7 @@ namespace Company.TestApp.Model
         /// <summary>
         /// Directory Item
         /// </summary>
-        public DirectoryItem DirectoryItemValue { get; set; }
+        public DirectoryFileItem DirectoryItemValue { get; set; }
 
         /// <summary>
         /// Action related with directory 

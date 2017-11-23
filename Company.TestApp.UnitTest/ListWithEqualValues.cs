@@ -18,8 +18,8 @@ namespace Company.TestApp.UnitTest
         /// <summary>
         /// Private field with static values 
         /// </summary>
-        private List<CompareDirectoryItem> items = new List<CompareDirectoryItem>() { new CompareDirectoryItem() { ComparableValue = @"App\",FirstDirectoryItem = new DirectoryItem() {Name=@"App\",FullPath= @"C:\App\" }, SecondDirectoryItem = new DirectoryItem() {Name=@"App\",FullPath= @"C:\App\" }, Type=DirectoryItemType.Folder },
-                                                                                  new CompareDirectoryItem() { ComparableValue = @"App\",FirstDirectoryItem = new DirectoryItem() {Name=@"App\",FullPath= @"C:\App\" }, SecondDirectoryItem = new DirectoryItem() {Name=@"App\",FullPath= @"C:\App\" }, Type=DirectoryItemType.Folder } };
+        private List<CompareDirectoryItem> items = new List<CompareDirectoryItem>() { new CompareDirectoryItem() { ComparableValue = @"App\",FirstDirectoryItem = new DirectoryFileItem() {Name=@"App\",FullPath= @"C:\App\" }, SecondDirectoryItem = new DirectoryFileItem() {Name=@"App\",FullPath= @"C:\App\" }, Type=DirectoryItemType.Folder },
+                                                                                  new CompareDirectoryItem() { ComparableValue = @"App\",FirstDirectoryItem = new DirectoryFileItem() {Name=@"App\",FullPath= @"C:\App\" }, SecondDirectoryItem = new DirectoryFileItem() {Name=@"App\",FullPath= @"C:\App\" }, Type=DirectoryItemType.Folder } };
         /// <summary>
         /// Get Test List with same values
         /// </summary> 

@@ -72,7 +72,7 @@ namespace Company.TestApp.Business
             var actionItems = CompareResult.Where(x => x.SecondDirectoryItem == null).Select(row => new DirectoryItemAndAction
             {
                 ActionType = DirectoryItemActionType.Create,
-                DirectoryItemValue = new DirectoryItem()
+                DirectoryItemValue = new DirectoryFileItem()
                 {
                     FullPath = row.FirstDirectoryItem.FullPath,
                     Name = row.ComparableValue,
@@ -85,7 +85,7 @@ namespace Company.TestApp.Business
                                                 .Select(row => new DirectoryItemAndAction
                                                         {
                                                             ActionType = DirectoryItemActionType.Delete,
-                                                            DirectoryItemValue = new DirectoryItem() { FullPath = row.SecondDirectoryItem.FullPath, Type = row.Type, Name = row.SecondDirectoryItem.Name }
+                                                            DirectoryItemValue = new DirectoryFileItem() { FullPath = row.SecondDirectoryItem.FullPath, Type = row.Type, Name = row.SecondDirectoryItem.Name }
                                                         })
                                                 .OrderByDescending(row => row.DirectoryItemValue)
                                                 );

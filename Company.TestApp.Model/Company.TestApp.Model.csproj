@@ -42,7 +42,8 @@
   <ItemGroup>
     <Compile Include="DirectoryItemAndAction.cs" />
     <Compile Include="CompareDirectoryItem.cs" />
-    <Compile Include="DirectoryItem.cs" />
+    <Compile Include="DirectoryFileItem.cs" />
+    <Compile Include="InfoMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

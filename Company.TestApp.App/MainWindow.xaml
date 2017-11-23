@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Company.TestApp.App"
+        Icon="Images/MainIcon.png"
         mc:Ignorable="d"
         Title="Compare directory" Height="550" Width="525" WindowStartupLocation="CenterScreen">
     <Border Padding="15">
@@ -11,19 +12,15 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0">
+            <StackPanel Grid.Row="0" >
+                <TextBlock  x:Name="lblInfo" Margin="0 0 10 0" Text="{Binding Path=SystemInfoMessage.Message}"  
+                            Background="{Binding Path=SystemInfoMessage.BackgroundColor}"/>
+                </StackPanel>
+            <StackPanel Grid.Row="1">
 
-                <Grid>
-
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="2*" />
-                    </Grid.ColumnDefinitions>
-                    <!-- Buttons -->
-                    <Button x:Name="btnStart" Margin="0 0 10 0" Grid.Column="0" Content="Start or recompare" 
-                         Command="{Binding CompareDirectoryCommand}" />
-                </Grid>
+                
                 <!-- First and Second directory textbox -->
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -55,8 +52,19 @@
                     </StackPanel>
 
                 </Grid>
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Buttons -->
+                    <Button x:Name="btnStart" Margin="0 0 10 0" Grid.Column="0" Content="Start or recompare" 
+                         Command="{Binding CompareDirectoryCommand}" />
+                </Grid>
+
             </StackPanel>
-            <StackPanel Grid.Row="1">
+            <StackPanel Grid.Row="2">
                 <Grid>
                     <!--Compare directory results Tabs -->
                     <TabControl>
